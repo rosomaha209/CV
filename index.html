@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="uk">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junior Full Stack Developer</title>
     
 </head>
-<body>
+<body class="body">
     <header>
         <div class="navbar">
             <a class="navbar__link" href="#home">Головна</a>
-            <a class="navbar__link" href="#about">Про мене</a>
             <a class="navbar__link" href="#skills">Навички</a>
             <a class="navbar__link" href="#education">Освіта</a>
             <a class="navbar__link" href="#courses">Курси та тренінги</a>
-            <a class="navbar__link" href="eperience">Досвід</a>
+            <a class="navbar__link" href="#eperience">Досвід</a>
             <a class="navbar__link" href="#portfolio">Портфоліо</a>
             <a class="navbar__link" href="#contact">Контакти</a>
         </div>
@@ -24,6 +26,7 @@
    
 
     
+   <div class="header-container">
     <div class="header" id="home">
         <h1 class="name">
             Roman Sliusar
@@ -31,60 +34,46 @@
         <p class="position">
             Junior Full Stack Developer
         </p>
-
-    </div>
-
-    
-    <div class="about" id="about">
-        <img src="img/photo.jpg" alt="Моє фото">
-        <h3>
-            Про мене:
-        </h3>
-        <p>
+        <hr>
+        
+        <p class="about-description"> 
             Я шукаю можливості розвиватися у сфері технологій, де це можливо
             застосовувати свої навички в практичних проектах і сприяти розвитку та
             успіх команди.
         </p>
+
     </div>
+
+    <div class="photo-container">
+        <img class="photo" src="img/photo.jpg" alt="Моє фото">
+    </div>
+    
+   </div>
 
    
     <div class="skills" id="skills">
-        <h3>
-            Навички
+        <h3 class="skill-title">
+            Skills
         </h3>
         <ul class="skill__list">
-            <li>
+            <li class="skill-item python">
                 Python
             </li>
-            <li>
+            <li class="skill-item PyCharm">
                 PyCharm
             </li>
-            <li>
+            <li class="skill-item SQL">
                 SQL
             </li>
-            <li>
+            <li class="skill-item java_core">
                 Java Core
             </li>
-            <li>
+            <li class="skill-item javascript">
                 JavaScript
             </li>
-            <li>
-                HTML
-            </li>
-            <li>
-                CSS
-            </li>
-            <li>
-                Pandas
-            </li>
-            <li>
-                Excel
-            </li>
-            <li>
-                Visual Studio
-            </li>
-
+        
         </ul>
+       
     </div>
     <div class="education" id="education">
         <h3>
@@ -161,6 +150,125 @@
     <div class="hover-image">
         <img id="hoverImg" src="" alt="Hover Image">
     </div>
+    <div class="table-container">
+        <table class="course-table">
+            <tr>
+                <th>Курс</th>
+                <th>Дата завершення</th>
+            </tr>
+            <tr>
+                <td data-image="img\Conditional_Statements_in_Python.png" class="course__list-item">
+                    Conditional Statements in Python
+                </td>
+                <td>31.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\CSS_Fundamentals.png" class="course__list-item">
+                    CSS Fundamentals
+                </td>
+                <td>07.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Data_Types_in_Python.png" class="course__list-item">
+                    Data Types in Python
+                </td>
+                <td>30.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\Git_Essentials.png" class="course__list-item">
+                    Git Essentials
+                </td>
+                <td>15.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Intermediate_SQL.png" class="course__list-item">
+                    Intermediate SQL
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Introduction_to_ChatGPT.png" class="course__list-item">
+                    Introduction to ChatGPT 
+                </td>
+                <td>29.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\Introduction_to_Python.png" class="course__list-item">
+                    Introduction to Python
+                </td>
+                <td>29.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\Introduction_to_SQL.png" class="course__list-item">
+                    Introduction to SQL
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Object-oriented_programming.Java_Core.png" class="course__list-item">
+                    Object-oriented programming.Java Core
+                </td>
+                <td>06.03.2020</td>
+            </tr>
+            <tr>
+                <td data-image="img\Pandas_First_Steps.png" class="course__list-item">
+                    Pandas First Steps
+                </td>
+                <td>01.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Python_Basics_Date_and_Time_Mastery.png" class="course__list-item">
+                    Python Basics Date and Time Mastery
+                </td>
+                <td>01.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Python_Data_Structures.png" class="course__list-item">
+                    Python Data Structures
+                </td>
+                <td>30.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\Python_from_Zero_to_Hero.png" class="course__list-item">
+                    Python from Zero to Hero
+                </td>
+                <td>31.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\Python_Functions_Tutorial.png" class="course__list-item">
+                    Python Functions Tutorial
+                </td>
+                <td>12.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Python_Loops_Tutorial.png" class="course__list-item">
+                    Python Loops Tutorial
+                </td>
+                <td>31.12.2023</td>
+            </tr>
+            <tr>
+                <td data-image="img\Relational_Database_and_Normalization.png" class="course__list-item">
+                    Relational Database and Normalization
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\SQL_from_Zero_to_Hero.png" class="course__list-item">
+                    SQL from Zero to Hero
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td data-image="img\Ultimate_HTML.png" class="course__list-item">
+                    Ultimate HTML
+                </td>
+                <td>01.01.2024</td>
+            </tr>
+            
+        </table>
+    </div>
+
+
     <div class="eperience" id="eperience">
         <h3>
             Досвід
@@ -175,10 +283,15 @@
 
     
     <div class="portfolio" id="portfolio">
+        <h3>
+            Портфоліо
+        </h3>
         <ul class="portfolio_list">
             <li>
-                website 11.2023
-                https://github.com/rosomaha209/PyProject
+               <a href="https://github.com/rosomaha209/PyProject">
+                Сервер для вебсайту написаний на Python з використанням API
+               </a>
+                
             </li>
         </ul>
     </div>
@@ -259,7 +372,6 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
-    <script type="module" src="scripts/script.ts"></script>
-    <script type="module" crossorigin src="/assets/index-TzSJ9kmP.js"></script>
+
 </body>
 </html>
