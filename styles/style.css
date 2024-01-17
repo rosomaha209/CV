@@ -1,0 +1,51 @@
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar__link{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navbar__link:hover {
+    color: yellow;
+}
+
+.course__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    
+}
+
+.course__list-item{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.hover-image {
+    position:fixed;
+    top: 10px;
+    left: 10px;
+    
+}
+
+#hoverImg {
+    position: relative;
+    align-self: start;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+
