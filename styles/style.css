@@ -23,7 +23,7 @@
     font-family: Garamond;
 }
 .navbar__link:hover {
-    color: rgba(51, 255, 0, 0.95);
+    color: #033540;
 }
 
 .header-container{
@@ -70,6 +70,14 @@
     margin-right: 16%;
     color: #0b0b0b;
     height: 500px;
+    max-width: 822px;
+    
+}
+.background-skills{
+    padding-top: 100px;
+    position: absolute;
+    width: 65%;
+    max-width: 822px;
 }
 .skill__list{
     flex-grow: 1;
@@ -80,18 +88,24 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    max-width: 822px;
     
 }
-
+.skill-line{
+    border: 2px solid #033540;
+    background: #033540;
+}
 .skill-item{
     margin-top: 25px;
     position: relative;
-    border: 2px solid #050505;
+    border:0px solid #050505;
     border-radius: 5px;
     padding: 10px 26px;
     gap: 25px;
-    background: #345a2083;
     
+    width: 80px;
+    height: 20px;
+    text-align: center;
     
 
 }
@@ -109,36 +123,56 @@
     top: 70px;
 }
 .java_core{
-    left: -260px;
+    left: -270px;
     top: 115px;
 }
 .javascript{
-    left: -300px;
-    top: 140px;
+    left: -360px;
+    top: 160px;
 }
 .HTML{
-    left: 150px;
-    top: 20px;
+    left: 425px; 
+    top: 137px;
 }
 .CSS{
-    left: 150px;
-    top: 20px;
+    left: -140px;
+    top: 45px;
 }
 .Pandas{
-    left: 150px;
-    top: 20px;
+    left: -280px;
+    top: 90px;
 }
 .Excel{
-    left: 150px;
-    top: 20px;
+    left: -427px;
+    top: 135px;
 }
 .visual__studio{
-    left: 150px;
-    top: 20px;
+    left: -350px;
+    top: 180px;
+    font-size:small;
+    display: none;
 } 
+.certeficate-title{
+    margin-left: 19%;
+}
 
-
-
+.certeficate{
+    margin-left: 19%;
+    margin-right: 16%;
+    display: flex;
+    justify-content: space-between;
+}
+.certeficate-item{
+    max-width: 200px;
+    border-radius: 5px ;
+   
+}
+.certeficate-java-core{
+    
+}
+.size-certeficate{
+    width: 200px;
+}
 
 
 
@@ -177,20 +211,57 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 19%;
+    margin-right: 16%;
     
 }
 
 .course-table {
-    width: 75%;
-    border-collapse: collapse;
+    width: 100%;
+    /* border-collapse: collapse; */
+    
     
 
 }
 
 .course-table th, .course-table td {
-    border: 1px solid #15100A;
+    border: 0px solid #15100A;
     padding: 8px;
     text-align: left;
-    background: #dcdbe1;
+    background: #033540;
+    border-radius: 5px;
 }
 
+.contact{
+    margin-left: 19%;
+    margin-right: 16%;
+    background: #033540;
+    border-radius: 5px;
+    font-family: Garamond;
+    color: #f1f2f2;
+    display: flex;
+    justify-content: first baseline;
+}
+.contact_title_conatainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    font-size: -webkit-xxx-large;
+}
+.contact__list{
+    list-style: none;
+    margin: 0;
+
+}
+.contact__type{
+    margin: 0;
+    color: aquamarine;
+}
+.contact__link{
+    text-decoration: none;
+    color: #f1f2f2;
+    margin: 0;
+}
