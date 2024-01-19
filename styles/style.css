@@ -330,6 +330,7 @@ body::-webkit-scrollbar-track {
 
 .table__title{
     text-align: start;
+    cursor: pointer;
 }
 
 
@@ -348,13 +349,20 @@ body::-webkit-scrollbar-track {
 .course-table {
     width: 100%;
     background:linear-gradient(to bottom,#212121 , rgba(0, 255, 255, 0.062));
-    /* border-collapse: collapse; 
     
+}
+.sort__arrow-name{
+    display: inline-table;
     
 
 }
 
-.course-table th, .course-table td {
+.sort__arrow-date{
+    display: inline-table;
+    
+
+}
+/* .course-table th, .course-table td {
     border: 0px solid #15100A;
     padding: 8px;
     text-align: left;
@@ -362,10 +370,10 @@ body::-webkit-scrollbar-track {
     border-radius: 5px;
     color:#f1f2f2;
     
-/* }
-.course-table tr:nth-child(even) {
+/* } */
+/* .course-table tr:nth-child(even) {
     background-color:#da55ff18; /* Колір для парних рядків */
-}
+
 
 /* .course-table tr:nth-child(odd) {
     background-color: #5fafff1c /* Колір для непарних рядків 
