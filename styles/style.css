@@ -362,22 +362,30 @@ body::-webkit-scrollbar-track {
     
 
 }
-/* .course-table th, .course-table td {
-    border: 0px solid #15100A;
-    padding: 8px;
-    text-align: left;
-    
-    border-radius: 5px;
-    color:#f1f2f2;
-    
-/* } */
-/* .course-table tr:nth-child(even) {
-    background-color:#da55ff18; /* Колір для парних рядків */
+
+.card__4{
+    position: relative;
+    top: -90px;
+    margin-left: 400px;
+    z-index: 4;
+}
+.eperience-title{
+    position: relative;
+    max-width: 90px;
+    left: 550px;
+    top: 20px;
+}
+.eperience-discription{
+    max-width: 500px;
+    margin-left: 50px;
+}
+.eperience__link{
+    text-decoration: none;
+    color: aqua;
+}
 
 
-/* .course-table tr:nth-child(odd) {
-    background-color: #5fafff1c /* Колір для непарних рядків 
-} */ 
+
 
 
 .contact{

@@ -35,13 +35,12 @@ function sortTableByDate() {
     var rows = table.getElementsByTagName("tr");
     var data = [];
 
-    // Збираємо дані з таблиці в масив
+   
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         var courseName = cells[0].innerText.trim();
         var completionDate = cells[1].innerText.trim();
 
-        // Змінюємо формат дати на "MM/DD/YYYY"
         var parts = completionDate.split(".");
         var formattedDate = parts[1] + "/" + parts[0] + "/" + parts[2];
 
@@ -49,21 +48,21 @@ function sortTableByDate() {
         data.push(courseData);
     }
 
-    // Сортуємо масив за датою
+    
     data.sort(function(a, b) {
         return a.completionDate - b.completionDate;
     });
 
-    // Перезаписуємо дані в таблицю
+    
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         cells[0].innerText = data[i - 1].courseName;
         cells[1].innerText = data[i - 1].completionDate.toLocaleDateString(); // Повертаємо у форматі тексту
     }
-    // Задаємо стиль для стрілки сортування за датою
+   
     arrowDate.style.color = "aqua";
     arrowDate.style.textShadow = "1px 0px 10px aqua";
-    // Скидаємо колір для стрілки сортування за іменем
+   
     arrowName.style.color = "";
     arrowName.style.textShadow = "";
     
@@ -73,7 +72,7 @@ function sortTableByName() {
     var rows = table.getElementsByTagName("tr");
     var data = [];
 
-    // Збираємо дані з таблиці в масив
+    
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         var courseName = cells[0].innerText.trim();
@@ -83,21 +82,21 @@ function sortTableByName() {
         data.push(courseData);
     }
 
-    // Сортуємо масив за іменем курсу
+  
     data.sort(function(a, b) {
         return a.courseName.localeCompare(b.courseName);
     });
 
-    // Перезаписуємо дані в таблицю
+    
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         cells[0].innerText = data[i - 1].courseName;
         cells[1].innerText = data[i - 1].completionDate;
     }
-     // Задаємо стиль для стрілки сортування за іменем
+     
      arrowName.style.color = "aqua";
      arrowName.style.textShadow = "1px 0px 10px aqua";
-     // Скидаємо колір для стрілки сортування за датою
+     
      arrowDate.style.color = "";
      arrowDate.style.textShadow = "";
 }
