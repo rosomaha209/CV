@@ -1,29 +1,63 @@
+html{
+    -webkit-locale: "uk";
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .body{
-    background: #f1f2f2;
+    background: #212121;
     margin: 0;
-    width: 1280px;
+    width: 100%;
+    align-items: center;
+    color: #f1f2f2;
+    padding: 20px;
+    max-width: 1230px;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 5px; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #444242; 
 }
 .navbar {
     display: flex;
-    flex-wrap: wrap;
+    min-width: 1200px;
     align-items: center;
     justify-content: space-between;
-    background-color: #f1f2f2;
-    color: black;
+    background-color: #212121;
+    color:#f1f2f2;
     padding: 10px;
-    margin-left: 19%;
-    margin-right: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
+.last__name{
+    padding: 0;
+    margin: 0;
+    font-family: Garamond;
+    font-size: 25px;
+    font-weight: bold;
+    color: aqua;
+}
 .navbar__link{
-    color: black;
+    color: #f1f2f2;
     text-decoration: none;
     margin: 10px;
-
+    border-radius: 20px;
     font-family: Garamond;
+    font-size: 20px;
 }
 .navbar__link:hover {
-    color: #033540;
+    color: aqua;
+    text-shadow: 1px 0px 10px aqua;
 }
 
 .header-container{
@@ -32,12 +66,14 @@
 
 }
 .photo-container{
-    width: 50%;
+    
+    width: 30%;
     display: flex;
     justify-content: space-around;
 }
 .header{
-    margin-left: 20%;
+    margin-top: 90px;
+    margin-left: 380px;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -48,61 +84,115 @@
 .name{
     margin-top: 94px;
     margin-bottom: 0px;
+    color: #f1f2f2;
+    font-size: 60px;
 }
 .position{
     margin: 0;
     font-weight: 600;
+    color: aqua;
 }
+
 
 
 
 .photo{
-    margin-top: 50px;
-    width: 200px;
+    margin-top: 30px;
+    margin-left: 350px;
+    width: 350px;
     height: auto;
-    border-radius: 50px;
+    border-radius: 0px;
     
 }
 
+.SUMMARY{
+    max-width: 1200px;
+}
 
-.skills{
-    margin-left: 19%;
-    margin-right: 16%;
-    color: #0b0b0b;
-    height: 500px;
-    max-width: 822px;
-    
+
+.container__card{
+    width: 700px;
+    height: 250px;
+    background: #212121;
+    box-shadow: 1px 20px 50px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
 }
-.background-skills{
-    padding-top: 100px;
-    position: absolute;
-    width: 65%;
-    max-width: 822px;
-}
-.skill__list{
-    flex-grow: 1;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+.container__card:hover {
+    box-shadow: 1px 20px 50px aqua;
+  }
+
+
+.card__1{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 822px;
+    margin-left: 260px;
+    z-index: 10;
     
 }
-.skill-line{
-    border: 2px solid #033540;
-    background: #033540;
+.container__birthday{
+    width: 450px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    
+    
 }
+.day__birth{
+    color: url("/img/photo-2.jpg");
+    font-size: 120px;
+    margin: 0;
+    font-weight: 600;
+    margin-right: 0;
+    
+}
+.year__birth{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5px;
+    color:aqua;
+    
+}
+.about-description{
+    color: #f1f2f2;
+}
+.container_about{
+    display: flex;
+    max-width: 400px;
+    padding-left: 00px;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 50px;
+
+}
+.card__2{
+    position: relative;
+    top: -35px;
+    margin-left: 450px;
+    z-index: 5;
+    
+}
+
+
+
+
+
+.skill__list{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    max-width: 650px;
+}
+
 .skill-item{
     margin-top: 25px;
     position: relative;
-    border:0px solid #050505;
+    border:0px solid #f1f2f2;
     border-radius: 5px;
     padding: 10px 26px;
     gap: 25px;
-    
     width: 80px;
     height: 20px;
     text-align: center;
@@ -112,6 +202,7 @@
 .python{
     left: 0px;
     top: -20px;
+    
 }
 
 .PyCharm{
@@ -131,27 +222,53 @@
     top: 160px;
 }
 .HTML{
-    left: 425px; 
-    top: 137px;
+    right: -150px;
+    top: -85px;
 }
 .CSS{
-    left: -140px;
-    top: 45px;
+    right: -70px;
+    top: -40px;
 }
 .Pandas{
-    left: -280px;
-    top: 90px;
+    right: 10px;
+    top: 5px;
 }
-.Excel{
-    left: -427px;
-    top: 135px;
+.git{
+    right: 90px;
+    top: 50px;
 }
 .visual__studio{
-    left: -350px;
-    top: 180px;
+    right: 170px;
+    top: 95px;
     font-size:small;
-    display: none;
+    
+}
+
+.skill-line{
+    border: 2px solid #f1f2f2;
+    
+}
+.line__skill{
+    border: 2px solid aqua;
 } 
+
+.skill-title{
+    position: relative;
+    font-size: 30px;
+    left: 500px;
+    max-width: 70px;
+    top: -100px;
+}
+
+
+.card__3{
+    position: relative;
+    top: -50px;
+    margin-left: 150px;
+    z-index: 7;
+}
+
+
 .certeficate-title{
     margin-left: 19%;
 }
@@ -195,7 +312,9 @@
 
     z-index: 99;
     
+    transition: opacity 0.3s ease-in-out;
 }
+
 
 #hoverImg {
     position: relative;
@@ -204,9 +323,19 @@
     max-height: 50%;
     
 }
-
+.dropdown-btn {
+    margin-left: 19%;
+    
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+    font-size:larger;
+}
 .table-container{
-    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 19%;
@@ -216,6 +345,7 @@
 
 .course-table {
     width: 100%;
+    background:linear-gradient(to bottom, #fcf824b3, #ec562dbe);
     /* border-collapse: collapse; */
     
     
@@ -226,14 +356,24 @@
     border: 0px solid #15100A;
     padding: 8px;
     text-align: left;
-    background: #033540;
+    
     border-radius: 5px;
+    color:#f1f2f2;
+    
+/* }
+.course-table tr:nth-child(even) {
+    background-color:#da55ff18; /* Колір для парних рядків */
 }
+
+/* .course-table tr:nth-child(odd) {
+    background-color: #5fafff1c /* Колір для непарних рядків 
+} */ 
+
 
 .contact{
     margin-left: 19%;
     margin-right: 16%;
-    background: #033540;
+    background:linear-gradient(to bottom, #fcf824b3, #ec562dbe);
     border-radius: 5px;
     font-family: Garamond;
     color: #f1f2f2;
@@ -241,7 +381,7 @@
     justify-content: first baseline;
 }
 .contact_title_conatainer{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -249,17 +389,48 @@
     align-items: center;
     font-size: -webkit-xxx-large;
 }
+.contact_title{
+    font-family: Garamond;
+    
+}
+.contact__conatainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .contact__list{
     list-style: none;
     margin: 0;
 
 }
+.contact__element-list{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: flex-start;}
 .contact__type{
+    min-width: 100px;
     margin: 0;
-    color: aquamarine;
+    color: #050505;
 }
 .contact__link{
     text-decoration: none;
+    color: #050505;
+    
+    
+    
+    
+}
+.footer{
+    height: 30px;
+    background: #033540;
     color: #f1f2f2;
     margin: 0;
+    margin-left: 19%;
+    margin-right: 16%;
+    text-align: center;
 }
+.footer__title{
+    margin-top: 0px;
+}
+
+
