@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Full Stack Developer</title>
+
+</head>
+
+<body class="body">
+    <header>
+        <div class="navbar">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="index.html#skills">Skills</a>
+            <a class="navbar__link" href="index.html#courses">Courses and trainings</a>
+            <a class="last__name" href="index.html">SLIUSAR</a>
+            <a class="navbar__link" href="index.html#eperience">Experience</a>
+            <a class="navbar__link" href="index.html#portfolio">Portfolio</a>
+            <a class="navbar__link" href="index.html#contact">Contacts</a>
+        </div>
+    </header>
+
+
+    <div class="table-container">
+        <table class="course-table" id="courseTable">
+            <tr>
+                <th >ADDITIONAL COURSES AND TRAININGS</th>
+                <th >Completion Date</th>
+
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Conditional_Statements_in_Python.png')" class="course__list-item">
+                    Conditional Statements in Python
+                </td>
+                <td>31.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\CSS_Fundamentals.png')" class="course__list-item">
+                    CSS Fundamentals
+                </td>
+                <td>07.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Data_Types_in_Python.png')" class="course__list-item">
+                    Data Types in Python
+                </td>
+                <td>30.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Git_Essentials.png')" class="course__list-item">
+                    Git Essentials
+                </td>
+                <td>15.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Intermediate_SQL.png')" class="course__list-item">
+                    Intermediate SQL
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Introduction_to_ChatGPT.png')" class="course__list-item">
+                    Introduction to ChatGPT
+                </td>
+                <td>29.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Introduction_to_Python.png')" class="course__list-item">
+                    Introduction to Python
+                </td>
+                <td>29.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Introduction_to_SQL.png')" class="course__list-item">
+                    Introduction to SQL
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Object-oriented_programming.Java_Core.png')"
+                    class="course__list-item">
+                    Object-oriented programming.Java Core
+                </td>
+                <td>06.03.2020</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Pandas_First_Steps.png')" class="course__list-item">
+                    Pandas First Steps
+                </td>
+                <td>01.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Python_Basics_Date_and_Time_Mastery.png')" class="course__list-item">
+                    Python Basics Date and Time Mastery
+                </td>
+                <td>01.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Python_Data_Structures.png')" class="course__list-item">
+                    Python Data Structures
+                </td>
+                <td>30.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Python_from_Zero_to_Hero.png')" class="course__list-item">
+                    Python from Zero to Hero
+                </td>
+                <td>31.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Python_Functions_Tutorial.png')" class="course__list-item">
+                    Python Functions Tutorial
+                </td>
+                <td>12.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Python_Loops_Tutorial.png')" class="course__list-item">
+                    Python Loops Tutorial
+                </td>
+                <td>31.12.2023</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Relational_Database_and_Normalization.png')"
+                    class="course__list-item">
+                    Relational Database and Normalization
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\SQL_from_Zero_to_Hero.png')" class="course__list-item">
+                    SQL from Zero to Hero
+                </td>
+                <td>11.01.2024</td>
+            </tr>
+            <tr>
+                <td onclick="openCertificate('img\\Ultimate_HTML.png')" class="course__list-item">
+                    Ultimate HTML
+                </td>
+                <td>01.01.2024</td>
+            </tr>
+
+        </table>
+    </div>
+
+
+
+
+    <!-- 
+    
+    <div class="contact" id="contact">
+       <div class="contact_title_conatainer">
+        <h3 class="contact_title">
+            Contacts
+        </h3>
+       </div>
+       <div class="contact__conatainer">
+        <ul class="contact__list">
+            <li class="contact__element-list">
+                <p class="contact__type">
+                    Email:
+                </p>
+                <a class="contact__link" href="mailto:rosomaha209@gmail.com">rosomaha209@gmail.com</a>
+            </li>
+            <li class="contact__element-list">
+                <p class="contact__type">
+                    Phone:
+                </p>
+                <a class="contact__link" href="tel:380951817969">+380 (95) 18 17 969</a>
+                <a class="contact__link" href="tel:4915237305449">+49 (1523) 730 54 49</a>
+            </li>
+            <li class="contact__element-list">
+                <p class="contact__type">
+                    Location:
+                </p>
+                <a class="contact__link" href="#">16225, Еберсвальде, Барнім, Бранденбург, Німеччина</a>
+            </li>
+            <li class="contact__element-list">
+                <p class="contact__type">
+                    Telegram:
+                </p>
+                <a class="contact__link" href="https://t.me/rosomaha215">rosomaha215</a>
+            </li>
+            <li class="contact__element-list">
+                <p class="contact__type">
+                    LinkedIn:
+                </p>
+                <a class="contact__link" href="https://www.linkedin.com/in/rsliusar/">rsliusar</a>
+            </li>
+            <li class="contact__element-list">
+                <p class="contact__type">
+                    GitHub:
+                </p>
+                <a class="contact__link" href="https://github.com/rosomaha209">rosomaha209</a>
+            </li>
+        </ul>
+       
+       </div>
+    </div>
+     -->
+
+    <!-- <footer class="footer">
+        <p class="footer__title">© 2024 Junior Full Stack Developer.</p>
+    </footer> -->
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -46,6 +46,7 @@ body::-webkit-scrollbar-track {
     font-size: 25px;
     font-weight: bold;
     color: aqua;
+    text-decoration: none;
 }
 .navbar__link{
     color: #f1f2f2;
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-track {
 .card__1{
     display: flex;
     margin-left: 260px;
-    z-index: 10;
+    z-index: 1;
     
 }
 .container__birthday{
@@ -171,7 +172,7 @@ body::-webkit-scrollbar-track {
     position: relative;
     top: -35px;
     margin-left: 450px;
-    z-index: 5;
+    z-index: 2;
     
 }
 
@@ -265,7 +266,7 @@ body::-webkit-scrollbar-track {
     position: relative;
     top: -50px;
     margin-left: 150px;
-    z-index: 5;
+    z-index: 3;
 }
 
 
@@ -276,7 +277,7 @@ body::-webkit-scrollbar-track {
     padding-top: 10px;
     font-family: garamond;
     font-size: 20px;
-    max-width: 100px;
+    max-width: 190px;
 }
 .all__certificate{
     display: flex;
@@ -314,64 +315,40 @@ body::-webkit-scrollbar-track {
 
 
 
-
-
-.course__list {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-    
-}
-
 .course__list-item{
     position: relative;
     padding: 10px;
     cursor: pointer;
+    font-family: garamond;
+    font-size: 20px;
     
 }
+.course__list-item:hover{
+    color: aqua;
+    text-shadow: 1px 0px 10px aqua;
+}
 
-.hover-image {
-    position:fixed;
-    top: 10px;
-    left: 10px;
-
-    z-index: 99;
-    
-    transition: opacity 0.3s ease-in-out;
+.table__title{
+    text-align: start;
 }
 
 
-#hoverImg {
-    position: relative;
-    align-self: start;
-    max-width: 50%;
-    max-height: 50%;
-    
-}
-.dropdown-btn {
-    margin-left: 19%;
-    
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    
-    font-size:larger;
-}
 .table-container{
     max-height: 0;
-    overflow: hidden;
+    
     transition: max-height 0.5s ease-out;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 19%;
-    margin-right: 16%;
+    margin-right: 19%;
+    
     
 }
 
 .course-table {
     width: 100%;
-    background:linear-gradient(to bottom, #fcf824b3, #ec562dbe);
-    /* border-collapse: collapse; */
+    background:linear-gradient(to bottom,#212121 , rgba(0, 255, 255, 0.062));
+    /* border-collapse: collapse; 
     
     
 
