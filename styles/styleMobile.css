@@ -1,0 +1,86 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
+        width: 100%;
+        min-width: 680px;
+    }
+
+    .navbar__link {
+        font-size: 18px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .photo-container {
+        position: relative;
+        width: 50%;
+        justify-content: space-around;
+        right: 50px;
+    }
+
+    .header {
+        position: relative;
+        bottom: 100px;
+        min-width: 250px;
+        margin-left: 50%;
+    }
+
+    .name {
+        margin-top: 94px;
+        
+    }
+
+    .position {
+        font-size: 18px;
+    }
+
+    .photo {
+        margin-top: 30px;
+        width: 100%;
+        
+        height: auto;
+    }
+
+    .card__1 {
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    .card__2 {
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    .card__3 {
+        margin: 20px;
+        margin-top: 0px;
+    }
+
+    .card__4 {
+        margin: 20px;
+        margin-top: 45px;
+    }
+
+    .card__5 {
+        margin: 20px;
+        margin-top: 75px;
+    }
+
+    .card__6 {
+        margin: 20px;
+        margin-top: 65px;
+    }
+    .table-container {
+        
+        min-width: 570px;
+    }
+    .footer__title {
+        margin-left: 45%;
+        min-width: 400px;
+    }
+}
