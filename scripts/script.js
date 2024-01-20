@@ -35,7 +35,7 @@ function sortTableByDate() {
     var rows = table.getElementsByTagName("tr");
     var data = [];
 
-   
+
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         var courseName = cells[0].innerText.trim();
@@ -48,31 +48,31 @@ function sortTableByDate() {
         data.push(courseData);
     }
 
-    
-    data.sort(function(a, b) {
+
+    data.sort(function (a, b) {
         return a.completionDate - b.completionDate;
     });
 
-    
+
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         cells[0].innerText = data[i - 1].courseName;
         cells[1].innerText = data[i - 1].completionDate.toLocaleDateString(); // Повертаємо у форматі тексту
     }
-   
+
     arrowDate.style.color = "aqua";
     arrowDate.style.textShadow = "1px 0px 10px aqua";
-   
+
     arrowName.style.color = "";
     arrowName.style.textShadow = "";
-    
+
 }
 function sortTableByName() {
     var table = document.getElementById("courseTable");
     var rows = table.getElementsByTagName("tr");
     var data = [];
 
-    
+
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         var courseName = cells[0].innerText.trim();
@@ -82,23 +82,23 @@ function sortTableByName() {
         data.push(courseData);
     }
 
-  
-    data.sort(function(a, b) {
+
+    data.sort(function (a, b) {
         return a.courseName.localeCompare(b.courseName);
     });
 
-    
+
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         cells[0].innerText = data[i - 1].courseName;
         cells[1].innerText = data[i - 1].completionDate;
     }
-     
-     arrowName.style.color = "aqua";
-     arrowName.style.textShadow = "1px 0px 10px aqua";
-     
-     arrowDate.style.color = "";
-     arrowDate.style.textShadow = "";
+
+    arrowName.style.color = "aqua";
+    arrowName.style.textShadow = "1px 0px 10px aqua";
+
+    arrowDate.style.color = "";
+    arrowDate.style.textShadow = "";
 }
 
 
