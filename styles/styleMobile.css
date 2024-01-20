@@ -9,7 +9,9 @@
     .navbar__link {
         font-size: 18px;
     }
-
+    .course__link{
+        margin-left: 20px;
+    }
     .header-container {
         flex-direction: row;
         justify-content: space-between;

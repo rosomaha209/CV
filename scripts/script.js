@@ -100,5 +100,13 @@ function sortTableByName() {
     arrowDate.style.color = "";
     arrowDate.style.textShadow = "";
 }
-
+window.onload = function() {
+    if (window.innerWidth <= 768) {
+    
+        var navbarLink = document.querySelector('.course__link');
+        if (navbarLink) {
+            navbarLink.textContent = 'Courses';
+        }
+    }
+};
 
