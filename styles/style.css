@@ -381,9 +381,14 @@ body::-webkit-scrollbar-track {
 .course-table {
     width: 100%;
     background: linear-gradient(to bottom, #212121, rgba(0, 255, 255, 0.062));
-
+    counter-reset: rowNumber;
 }
-
+td:first-child::before {
+    counter-increment: rowNumber;
+    content: counter(rowNumber);
+    display: inline-block;
+    margin-right: 0.5em;
+}
 .sort__arrow-name {
     display: inline-table;
 
