@@ -36,7 +36,7 @@ function sortTableByName() {
     var table = document.getElementById("courseTable");
     var rows = table.getElementsByTagName("tr");
     var data = [];
-    
+
     sortOrderName = (sortOrderName === "asc") ? "desc" : "asc";
 
     for (var i = 1; i < rows.length; i++) {
@@ -70,8 +70,8 @@ function sortTableByDate() {
     var table = document.getElementById("courseTable");
     var rows = table.getElementsByTagName("tr");
     var data = [];
-    
-    
+
+
     sortOrderDate = (sortOrderDate === "asc") ? "desc" : "asc";
 
     for (var i = 1; i < rows.length; i++) {
@@ -97,33 +97,34 @@ function sortTableByDate() {
         cells[1].innerText = data[i - 1].completionDate.toLocaleDateString();
         cells[0].setAttribute("onclick", data[i - 1].onclick);
     }
- 
+
     updateSortIndicator(arrowDate, sortOrderDate);
- 
+
     arrowName.style.color = "#f1f2f2";
     arrowName.style.textShadow = "none";
 }
 function updateSortIndicator(arrowElement, sortOrder) {
-   
+
     if (sortOrder === "asc") {
         arrowElement.innerHTML = "↓";
     } else {
         arrowElement.innerHTML = "↑";
     }
 
-    
+
     arrowElement.style.color = "aqua";
     arrowElement.style.textShadow = "1px 0px 10px aqua";
-    
+
 }
 
-window.onload = function() {
+window.onload = function () {
     if (window.innerWidth <= 768) {
-    
+        
         var navbarLink = document.querySelector('.course__link');
         if (navbarLink) {
             navbarLink.textContent = 'Courses';
         }
+       
     }
 };
 
@@ -140,7 +141,7 @@ function searchTable() {
     tr = table.getElementsByTagName("tr");
 
     for (i = 1; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0]; // Змініть це на індекс стовпця, в якому ви хочете шукати
+        td = tr[i].getElementsByTagName("td")[0];
         if (td) {
             txtValue = td.textContent || td.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {

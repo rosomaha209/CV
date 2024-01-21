@@ -366,7 +366,7 @@ body::-webkit-scrollbar-track {
 .table__title {
     text-align: start;
     cursor: pointer;
-    
+    min-width: 150px;
 
 }
 .name_title{
