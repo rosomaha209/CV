@@ -352,6 +352,7 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
     font-family: garamond;
     font-size: 20px;
+    min-width: 550px;
 
 }
 
@@ -363,6 +364,11 @@ body::-webkit-scrollbar-track {
 .table__title {
     text-align: start;
     cursor: pointer;
+    
+
+}
+.name_title{
+    min-width: 550px;
 }
 
 
@@ -395,6 +401,7 @@ body::-webkit-scrollbar-track {
 
 .course-table {
     width: 100%;
+    min-width: 600px;
     background: linear-gradient(to bottom, #212121, rgba(0, 255, 255, 0.062));
     counter-reset: rowNumber;
 }
@@ -404,6 +411,7 @@ td:first-child::before {
     display: inline-block;
     margin-right: 0.5em;
 }
+
 .sort__arrow-name {
     display: inline-table;
 
