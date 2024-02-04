@@ -410,6 +410,11 @@ body::-webkit-scrollbar-track {
 .name_title {
     min-width: 550px;
 }
+.certeficate-company{
+    min-width: 100px;
+    text-align: start;
+    cursor: pointer;
+}
 
 
 .table-container {
@@ -462,6 +467,11 @@ td:first-child::before {
 }
 
 .sort__arrow-date {
+    display: inline-table;
+
+
+}
+.sort__arrow-company {
     display: inline-table;
 
 
