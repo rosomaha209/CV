@@ -302,7 +302,7 @@ body::-webkit-scrollbar-track {
 .visual__studio {
     right: 180px;
     top: 95px;
-    font-size: small;
+    
     animation: changeColor 1s ease infinite;
     animation-delay: 4.5s;
 
@@ -504,7 +504,7 @@ td:first-child::before {
 
 .card__5 {
     position: relative;
-    top: -160px;
+    top: -140px;
     margin-left: 50px;
     z-index: 5;
     display: flex;
