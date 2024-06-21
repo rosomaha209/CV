@@ -34,11 +34,13 @@
 
     .name {
         margin-top: 94px;
+        margin-left: 70px;
         
     }
 
     .position {
         font-size: 18px;
+        margin-left: 70px;
     }
 
     .photo {
